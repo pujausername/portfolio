@@ -1,0 +1,2000 @@
+1) Input any number then find the factorial.
+i) //function with argument with return
+#include<stdio.h>
+int fact(int );
+int main()
+{
+	int n,f;
+	printf("\n enter any number: ");
+	scanf("%d",&n);
+	f=fact(n);
+	printf("\n Factorial of a number=%d",f);
+	return 0;
+}
+int fact(int n)
+{
+	int i,f=1;
+	for(i=1;i<=n;i++)
+	{
+		f=f*i;
+	return(f);
+}
+}
+ii)//function with argument without return
+#include<stdio.h>
+void fact(int );
+int main()
+{
+	int n;
+	printf("\n enter any number: ");
+	scanf("%d",&n);
+	fact(n);
+	return 0;
+}
+void fact(int n)
+{
+	int i,f=1;
+	for(i=1;i<=n;i++)
+	{
+		f=f*i;
+     }
+     printf("\n factorial=%d",f);
+}
+iii)//function without argument with return
+#include<stdio.h>
+int fact();
+int main()
+{
+	int f;
+	f=fact();
+	printf("\n factorial=%d",f);
+	return 0;
+}
+int fact()
+{
+	int n,i,f=1;
+	printf("\n enter any element:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		f=f*i;
+     }
+     return(f);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void fact();
+int main()
+{
+	int f;
+    fact();
+	return 0;
+}
+void fact()
+{
+	int n,i,f=1;
+	printf("\n enter any element:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		f=f*i;
+     }
+     printf("\n factorial=%d",f);
+}
+2)Input three number then find the greatest number.
+i)//function with argument with return
+#include<stdio.h>
+int grea(int,int,int);
+int main()
+{
+	int a,b,c,g;
+	printf("\n enter three number:");
+	scanf("%d%d%d",&a,&b,&c);
+	g=grea(a,b,c);
+	printf("\n Greatest number=%d",g);
+	return 0;
+}
+int grea(int x,int y,int z)
+{
+	int max;
+	if(x>y && x>z)
+	max=x;
+	else if(y>x && y>z)
+	max=y;
+	else
+	max=z;
+	return(max);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void grea(int,int,int);
+int main()
+{
+	int a,b,c;
+	printf("\n enter three number:");
+	scanf("%d%d%d",&a,&b,&c);
+	grea(a,b,c);
+	return 0;
+}
+void grea(int x,int y,int z)
+{
+	int max;
+	if(x>y && x>z)
+	max=x;
+	else if(y>x && y>z)
+	max=y;
+	else
+	max=z;
+	printf("\n greatest number=%d",max);
+}
+iii)//function without argument with return
+#include<stdio.h>
+int grea();
+int main()
+{
+	int g;
+	g=grea();
+	printf("\n greatest number=%d",g);
+	return 0;
+}
+int grea()
+{
+	int x,y,z,max;
+	printf("\n enter three number:");
+	scanf("%d%d%d",&x,&y,&z);
+	if(x>y && x>z)
+	max=x;
+	else if(y>x && y>z)
+	max=y;
+	else
+	max=z;
+	return(max);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void grea();
+int main()
+{
+    grea();
+	return 0;
+}
+void grea()
+{
+	int x,y,z,max;
+	printf("\n enter three number:");
+	scanf("%d%d%d",&x,&y,&z);
+	if(x>y && x>z)
+	max=x;
+	else if(y>x && y>z)
+	max=y;
+	else
+	max=z;
+	printf("\n greatest number=%d",max);
+}
+3)Input radius and height of cylinder then find volume and  total surface area.
+i)//function with argument with return
+#include<stdio.h>
+int volume(int ,int);
+int tsa(int,int);
+int main()
+{
+	int r,h,v,s;
+	printf("\n enter radius and height of a cylinder: ");
+	scanf("%d%d",&r,&h);
+	v=volume(r,h);
+	s=tsa(r,h);
+	printf("\n volume of cylinder=%d",v);
+	printf("\n Total surface area=%d",s);
+	return 0;
+}
+int volume(int r,int h)
+{
+	int v;
+	v=2*3.14*r*r*h;
+	return(v);
+}
+int tsa(int r,int h)
+{
+	int s;
+	s=2*3.14*r*(r+h);
+	return(s);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void volume(int ,int);
+void tsa(int,int);
+int main()
+{
+	int r,h;
+	printf("\n enter radius and height of a cylinder: ");
+	scanf("%d%d",&r,&h);
+	volume(r,h);
+	tsa(r,h);
+	return 0;
+}
+void volume(int r,int h)
+{
+	int v;
+	v=2*3.14*r*r*h;
+	printf("\n volume=%d",v);
+}
+void tsa(int r,int h)
+{
+	int s;
+	s=2*3.14*r*(r+h);
+	printf("\n Total surface area=%d",s);
+}
+iii)//function without argument with return
+#include<stdio.h>
+int volume();
+int tsa();
+int main()
+{
+	int v,s;
+    v=volume();
+	s=tsa();
+	return 0;
+}
+int volume()
+{
+	int v,r,h;
+	printf("\n enter radius and height of a cylinder:");
+	scanf("%d%d",&r,&h);
+	v=2*3.14*r*r*h;
+	printf("\n volume=%d",v);
+	return(v);
+}
+int tsa()
+{
+	int s,r,h;
+	printf("\n enter radius and height of a cylinder:");
+	scanf("%d%d",&r,&h);
+	s=2*3.14*r*(r+h);
+	printf("\n Total surface area=%d",s);
+	return(s);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void volume();
+void tsa();
+int main()
+{
+    volume();
+	tsa();
+	return 0;
+}
+void volume()
+{
+	int v,r,h;
+	printf("\n enter radius and height of a cylinder:");
+	scanf("%d%d",&r,&h);
+	v=2*3.14*r*r*h;
+	printf("\n volume=%d",v);
+}
+void tsa()
+{
+	int s,r,h;
+	printf("\n enter radius and height of a cylinder:");
+	scanf("%d%d",&r,&h);
+	s=2*3.14*r*(r+h);
+	printf("\n Total surface area=%d",s);
+}
+4)Input any number then count how many even or odd digit are present in it.
+i)//function without argument with return
+#include<stdio.h>
+int even();
+int odd();
+int main()
+{
+	int e,o;
+	e=even();
+	o=odd();
+	printf("\n number of even digit=%d,\n number of odd digit=%d",e,o);
+	return 0;
+}
+int even()
+{
+	int r,e=0,n;
+	printf("\n enter any element:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+		if(r%2==0)
+		e=e+1;
+		n=n/10;
+	}
+	return(e);
+}
+int odd()
+{
+	int r,o=0,n;
+	printf("\n enter any element:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+		if(r%2!=0)
+		o++;
+		n=n/10;
+	}
+	return(o);
+}
+ii)//function without argument without return
+#include<stdio.h>
+int even();
+int main()
+{
+	even();
+	
+	return 0;
+}
+int even()
+{
+	int r,e=0,n,o=0;
+	printf("\n enter any element:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+		if(r%2==0)
+		e=e+1;
+		else
+		o=o+1;
+		n=n/10;
+	}
+	printf("\n number of even digit=%d,\n number of odd digit=%d",e,o);
+}
+iii)//function with argument without return
+#include<stdio.h>
+int even(int);
+int main()
+{
+	int n,e;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	e=even(n);
+	return 0;
+}
+int even(int n)
+{
+	int r,e=0,o=0;
+	while(n>0)
+	{
+		r=n%10;
+		if(r%2==0)
+		e=e+1;
+		else
+		o=o+1;
+		n=n/10;
+	}
+	printf("\n number of even digit=%d,\n number of odd digit=%d",e,o);
+}
+iv)//function with argument with return
+#include<stdio.h>
+int even(int);
+int odd(int);
+int main()
+{
+	int n,e,o;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	e=even(n);
+	o=odd(n);
+	printf("\n number of even digit=%d,\n Number of odd digit=%d",e,o);
+	return 0;
+}
+int even(int n)
+{
+	int r,e=0,o=0;
+	while(n>0)
+	{
+		r=n%10;
+		if(r%2==0)
+		e=e+1;
+		n=n/10;
+	}
+	return(e);
+}
+int odd(int n)
+{
+	int r,o=0;
+	while(n>0)
+	{
+		r=n%10;
+		if(r%2!=0)
+		o=o+1;
+		n=n/10;
+	}
+	return(o);
+}
+
+
+5)Input any character then convert it into opposite case.
+#include<stdio.h>
+char convert(char ch)
+{
+	if(ch>='A' && ch<='Z')
+		ch=ch+32;
+	else
+		ch=ch-32;
+	return(ch);
+}
+void check(char ch)
+{                                                                     
+	char c;                                                           
+	int flag=0;                                                  
+	if(ch>='A' && ch<='Z' || ch>='a' && ch<='z')
+	{
+		c=convert(ch);	
+		flag=1;
+	}
+	if(flag==0)
+		printf("\n It is not an alphabet.");
+	else
+		printf("\n charcter = %c",c);
+	
+}
+int main()
+{
+	char ch;
+	printf("\n Enter a charcter > ");
+	scanf("%c",&ch);       
+	check(ch);
+	return 0;
+}
+
+6)Input a number then print its table.
+i)//function with argument with return
+#include<stdio.h>
+int table(int,int);
+int main()
+{
+int i,n,t;
+printf("\n Enter an integer= ");
+scanf("%d",&n);
+for(i=1; i<=10; i++)
+{
+t=table(i,n);
+printf("\n %d",t);
+}
+return 0;
+}
+int table(int i,int n)
+{
+return(i*n);
+}
+}
+ii)//function with argument without return
+#include<stdio.h>
+void table(int);
+int main()
+{
+	int n,t,i;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	table(n);
+	return 0;
+}
+void table(int n)
+{
+	int i,t;
+	for(i=1;i<=10;i++)
+	{
+		t=n*i;
+ printf("\n %d is %d=%d",n,i,t);
+} 
+}
+iii)//function without argument with return
+#include<stdio.h>
+int table();
+int main()
+{
+	int t;
+    t=table();
+	return 0;
+}
+int table()
+{
+	int i,n,t;
+	printf("\n enter any number: ");
+	scanf("%d",&n);
+	for(i=1;i<=10;i++)
+	{
+		t=n*i;
+ printf("\n %d is %d=%d",n,i,t);
+} 
+return(t);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void table();
+int main()
+{
+    table();
+	return 0;
+}
+void table()
+{
+	int i,n,t;
+	printf("\n enter any number: ");
+	scanf("%d",&n);
+	for(i=1;i<=10;i++)
+	{
+		t=n*i;
+ printf("\n %d is %d=%d",n,i,t);
+} 
+}
+7)printf the series
+a)1+11+111+1111+.....
+i)//function with argument with return
+#include<stdio.h>
+int series(int);
+int main()
+{
+	int n,s;
+	printf("\n enter any terms:");
+	scanf("%d",&n);
+	s=series(n);
+	return 0;
+}
+int series(int n)
+{
+	int a=1,i;
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a*10+1;
+	}
+	return(a);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void series(int);
+int main()
+{
+	int n;
+	printf("\n enter any terms:");
+	scanf("%d",&n);
+	series(n);
+	return 0;
+}
+void series(int n)
+{
+	int a=1,i;
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a*10+1;
+	}
+}
+iii)//function without argument with return
+#include<stdio.h>
+int series();
+int main()
+{
+     int s;
+	s=series();
+	return 0;
+}
+int series()
+{
+	int a=1,i,n;
+	printf("\n enter any terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a*10+1;
+	}
+	return(a);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void series();
+int main()
+{
+    series();
+	return 0;
+}
+void series()
+{
+	int a=1,i,n;
+	printf("\n enter any terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a*10+1;
+	}
+}
+b)2+5+8+11+14.......
+i)//function with argument with return
+#include<stdio.h>
+int series(int);
+int main()
+{
+	int n,s;
+	printf("\n enter any terms:");
+	scanf("%d",&n);
+    s=series(n);
+	return 0;
+}
+int series(int n)
+{
+	int a=2,i;
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a+3;
+	}
+	return(a);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void series(int);
+int main()
+{
+	int n;
+	printf("\n enter any terms:");
+	scanf("%d",&n);
+    series(n);
+	return 0;
+}
+void series(int n)
+{
+	int a=2,i;
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a+3;
+	}
+}
+iii)//function without argument with return
+#include<stdio.h>
+int series();
+int main()
+{
+	int s;
+    s=series();
+	return 0;
+}
+int series()
+{
+	int a=2,i,n;
+	printf("\n enter no of series:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a+3;
+	}
+	return(a);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void series();
+int main()
+{
+	series();
+	return 0;
+}
+void series()
+{
+	int a=2,i,n;
+	printf("\n enter no of series:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",a);
+		if(i<n)
+		printf("+");
+		a=a+3;
+	}
+}
+c)     *
+      ***
+     *****
+    *******
+   *********
+  ***********
+i)//function with argument with return
+#include<stdio.h>
+int series(int);
+int main()
+{
+	int n,s;
+	printf("\n enter no of series:");
+	scanf("%d",&n);
+	s=series(n);
+	return 0;
+}
+int series(int n)
+{
+	int i,j,k;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-i;j++)
+		printf(" ");
+		for(k=1;k<=2*i-1;k++)
+		printf("*");
+		printf("\n");
+	}
+	return(n);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void series(int);
+int main()
+{
+	int n;
+	printf("\n enter no of series:");
+	scanf("%d",&n);
+	series(n);
+	return 0;
+}
+void series(int n)
+{
+	int i,j,k;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-i;j++)
+		printf(" ");
+		for(k=1;k<=2*i-1;k++)
+		printf("*");
+		printf("\n");
+	}
+}
+iii)//function without argument with return
+#include<stdio.h>
+int series();
+int main()
+{
+	int s;
+	s=series();
+	return 0;
+}
+int series()
+{
+	int i,j,k,n;
+	printf("\n enter no of terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-i;j++)
+		printf(" ");
+		for(k=1;k<=2*i-1;k++)
+		printf("*");
+		printf("\n");
+	}
+	return(n);
+}   
+iv)//function without argument without return
+#include<stdio.h>
+int series();
+int main()
+{
+	series();
+	return 0;
+}
+int series()
+{
+	int i,j,k,n;
+	printf("\n enter no of terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-i;j++)
+		printf(" ");
+		for(k=1;k<=2*i-1;k++)
+		printf("*");
+		printf("\n");
+	}
+}
+d)     5
+      545
+     54345
+    5432345
+   543212345
+i)//function with argument with return
+#include<stdio.h>
+int series(int);
+int main()
+{
+	int n,s;
+	printf("\n enter no of series:");
+	scanf("%d",&n);
+    s=series(n);
+	return 0;
+}
+int series(int n)
+{
+	int i,j,k,a,m;
+	for(i=1;i<=n;i++)
+	{
+		a=5;
+		for(j=1;j<=n-i;j++)
+		{
+		printf(" ");
+	}
+		for(k=1;k<=i;k++)
+		{
+		printf("%d",a--);
+	}
+	a=a+2;
+	for(m=1;m<i;m++)
+	{
+		printf("%d",a++);
+	}
+		printf("\n");
+	}
+	return(a);
+}
+ii)//function with argument with return
+#include<stdio.h>
+void series(int);
+int main()
+{
+	int n,s;
+	printf("\n enter no of series:");
+	scanf("%d",&n);
+    s=series(n);
+	return 0;
+}
+void series(int n)
+{
+	int i,j,k,a,m;
+	for(i=1;i<=n;i++)
+	{
+		a=5;
+		for(j=1;j<=n-i;j++)
+		{
+		printf(" ");
+	}
+		for(k=1;k<=i;k++)
+		{
+		printf("%d",a--);
+	}
+	a=a+2;
+	for(m=1;m<i;m++)
+	{
+		printf("%d",a++);
+	}
+		printf("\n");
+	}
+	return(a);
+}
+iii)//function without argument with return
+#include<stdio.h>
+int series();
+int main()
+{
+	int s;
+    s=series();
+	return 0;
+}
+int series()
+{
+	int i,j,k,a,m,n;
+	printf("\n enter no of terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		a=5;
+		for(j=1;j<=n-i;j++)
+		{
+		printf(" ");
+	}
+		for(k=1;k<=i;k++)
+		{
+		printf("%d",a--);
+	}
+	a=a+2;
+	for(m=1;m<i;m++)
+	{
+		printf("%d",a++);
+	}
+		printf("\n");
+	}
+	return(a);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void series();
+int main()
+{
+	series();
+	return 0;
+}
+void series()
+{
+	int i,j,k,a,m,n;
+	printf("\n enter no of terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		a=5;
+		for(j=1;j<=n-i;j++)
+		{
+		printf(" ");
+	}
+		for(k=1;k<=i;k++)
+		{
+		printf("%d",a--);
+	}
+	a=a+2;
+	for(m=1;m<i;m++)
+	{
+		printf("%d",a++);
+	}
+		printf("\n");
+	}
+}
+8)input any character then check its vowel,consonant,digit,special character.
+i)//function with argument with return
+#include<stdio.h>
+#include<string.h>
+int check_st(char);
+int main()
+{
+	char ch,chr;
+	printf("\n enter any character:");
+	scanf("%c",ch);
+	chr=check_st(ch);
+	printf("character is %s",chr);
+	return 0;
+}
+int check_st(char ch)
+{
+	int i;
+	i=0;
+	while(ch!='\0')
+	{
+		if((ch>=65 && ch<=90 )|| (ch>=97 && ch<=112))
+		{
+			if(ch=='a' || ch=='A' || ch=='e' || ch=='E' || ch=='i' || ch=='I' || ch=='o' || ch=='O' || ch=='u' || ch=='U')
+			printf("\n %c is vowels",ch);
+			else
+			printf("\n  %c is consonant",ch);
+			if(ch>=48 && ch<=57)
+			printf("\n %c is digit",ch);
+			else
+			printf("\n %c is special character",ch);
+			i++;
+		}
+	}
+	return(ch);
+}
+9)input any number then reverse it.
+i)//function with argument with return
+#include<stdio.h>
+int reverse(int);
+int main()
+{
+	int n,rev;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	rev=reverse(n);
+	printf("\n reverse order=%d",rev);
+	return 0;
+}
+int reverse(int n)
+{
+	int r,rev=0;
+	while(n>0)
+	{
+		r=n%10;
+		rev=rev*10+r;
+		n=n/10;
+	}
+	return(rev);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void reverse(int);
+int main()
+{
+	int n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	reverse(n);
+	return 0;
+}
+void reverse(int n)
+{
+	int r,rev=0;
+	while(n>0)
+	{
+		r=n%10;
+		rev=rev*10+r;
+		n=n/10;
+	}
+	printf("\n reverse order=%d",rev);
+}
+iii)//function without argument with return
+#include<stdio.h>
+int reverse();
+int main()
+{
+	int rev;
+   rev=reverse();
+   printf("\n reverse order=%d",rev);
+	return 0;
+}
+int reverse()
+{
+	int r,rev=0,n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+		rev=rev*10+r;
+		n=n/10;
+	}
+	return(rev);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void reverse();
+int main()
+{
+   reverse();
+	return 0;
+}
+void reverse()
+{
+	int r,rev=0,n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+		rev=rev*10+r;
+		n=n/10;
+	}
+	printf("\n reverse order=%d",rev);
+}
+10)Input any number then check the number is armstrong or not.
+i)//function with argument with return
+#include<stdio.h>
+int arm(int);
+int main()
+{
+	int n,A;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	A=arm(n);
+	if(A==0)
+	printf("\n Not armstrong");
+	else
+	printf("\n armstrong");
+	return 0;
+}
+int arm(int n)
+{
+	int a,r,s=0,A;
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s+r*r*r;
+		n=n/10;
+	}
+	if(a==s)
+	A=1;
+	else
+	A=0;
+	return(A);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void arm(int);
+int main()
+{
+	int n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	arm(n);
+	return 0;
+}
+void arm(int n)
+{
+	int a,r,s=0;
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s+r*r*r;
+		n=n/10;
+	}
+	if(a==s)
+	printf("\n Armstrong");
+	else
+	printf("\n Not armstrong");
+}
+iii)//function without argument with return
+#include<stdio.h>
+int arm();
+int main()
+{
+	int A;
+	A=arm();
+	if(A==0)
+	printf("\n Not armstrong");
+	else
+	printf("\n Armstrong");
+	return 0;
+}
+int arm()
+{
+	int a,r,s=0,n,A;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s+r*r*r;
+		n=n/10;
+	}
+	if(a==s)
+	A=1;
+	else
+	A=0;
+	return(A);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void arm();
+int main()
+{
+	arm();
+	return 0;
+}
+void arm()
+{
+	int a,r,s=0,n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s+r*r*r;
+		n=n/10;
+	}
+	if(a==s)
+	printf("\n armstrong");
+	else
+	printf("\n not armstrong");
+}
+11)Print the fibonacci series
+i)//function with argument with return
+#include<stdio.h>
+int fib(int);
+int main()
+{
+	int n,f;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	f=fib(n);
+	return 0;
+}
+int fib(int n)
+{
+	int a=1,b=0,c,i;
+	for(i=1;i<=n;i++)
+	{
+		c=a+b;
+	printf("\n %d",c);
+	a=b;
+	b=c;	
+	}
+	return(c);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void fib(int);
+int main()
+{
+	int n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	fib(n);
+	return 0;
+}
+void fib(int n)
+{
+	int a=1,b=0,c,i;
+	for(i=1;i<=n;i++)
+	{
+		c=a+b;
+	printf("\t %d",c);
+	a=b;
+	b=c;	
+	}
+}
+iii)//function without argument with return
+#include<stdio.h>
+void fib();
+int main()
+{
+	int f,i;
+	f=fib();
+	return 0;
+}
+void fib()
+{
+	int a=1,b=0,c,i,n;
+	printf("\n enter no of terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		c=a+b;
+		printf("\t %d",c);
+	a=b;
+	b=c;	
+	}
+	return(c);
+}
+iv)//function without argument without return
+#include<stdio.h>
+int fib();
+int main()
+{
+	fib();
+	return 0;
+}
+int fib()
+{
+	int a=1,b=0,c,i,n;
+	printf("\n enter no of terms:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		c=a+b;
+		printf("\t %d",c);
+	a=b;
+	b=c;	
+	}
+}
+12)Input 5 elements in array then find the greatest element.
+i)//function without agrument with return
+#include<stdio.h>
+int maximum();
+int main()
+{
+	int m;
+	m=maximum();
+	printf("\n Greatest element=%d",m);
+	return 0;
+}
+int maximum()
+{
+	int max=0,i,a[5];
+	printf("\n enter element in array:");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		if(max<a[i])
+		max=a[i];
+	}
+	return(max);
+}
+ii)//function without agrument without return
+#include<stdio.h>
+void maximum();
+int main()
+{
+	maximum();
+	return 0;
+}
+void maximum()
+{
+	int max=0,i,a[5];
+	printf("\n enter element in array:");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		if(max<a[i])
+		max=a[i];
+	}
+	printf("\n Greatest element=%d",max);
+}
+	
+12)Print and solve this question :
+************************
+*Enter any element : 6 *
+*factorial value : 720 *
+************************
+#include<stdio.h>
+void box()
+{
+	int i;
+	for(i=0; i<24; i++)
+	printf("*");
+	printf("\n");
+}
+void single()
+{
+	printf("*");
+}
+int fact(int n)
+{
+	int m=1,i;
+	for(i=1; i<=n; i++)
+		m=m*i;                  
+	return (m);
+}
+int main()
+{
+	int n=8,f;
+	box();                                             
+	single();                                          
+	printf("Enter any element : %d ",n);
+	single();
+	printf("\n");	
+	single();
+	f=fact(n);
+	printf("Factorial : %d     ",f);
+	single();
+	printf("\n");	
+	box();
+	return 0;
+}
+13)Input five element in array and find the average of all even elements.
+i)//function without argument with return
+#include<stdio.h>
+int average();
+int main()
+{
+	float a;
+	a=average();
+	printf("\n average of all even number in array=%2f",a);
+    return 0;
+}
+int average()
+{
+	int a[5],e=0,s=0,i;
+	float av=0;
+	printf("\n enter element in array:");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		if(a[i]%2==0)
+		{
+			e++;
+			s=s+a[i];
+		}
+	}
+	av=s/e;
+	return(av);
+}
+ii)//function without argument without return
+#include<stdio.h>
+void average();
+int main()
+{
+	average();
+    return 0;
+}
+void average()
+{
+	int a[5],e=0,s=0,i;
+	float av=0;
+	printf("\n enter element in array:");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		if(a[i]%2==0)
+		{
+			e++;
+			s=s+a[i];
+		}
+	}
+	av=s/e;
+	printf("\n Average of all even elements=%2f",av);
+}
+14)Input 5 elements in array then check even,odd,and 0.
+//function without argument with return
+#include<stdio.h>
+int ev_odd();
+int main()
+{
+	ev_odd();
+	return 0;
+}
+int ev_odd()
+{
+	int a[5],i;
+	printf("\n enter element in array:");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+	  if(a[i]%2==0)
+	  printf("\n even=%d",a[i]);
+	  else
+	  printf("\n odd=%d",a[i]);
+	} 
+}
+
+15)input any number then convert into binary number.
+i)//function with argument with return
+#include<stdio.h>
+int dtob(int);
+int main()
+{
+	int n,d;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	d=dtob(n);
+	printf("\n Binary equivalent=%d",d);
+	return 0;
+}
+int dtob(int n)
+{
+	int d=1,s=0,r;
+	while(n>0)
+	{
+		r=n%2;
+		s=s+r*d;
+		d=d*10;
+		n=n/2;
+	}
+	return(s);
+}
+ii)//function with argument without return
+#include<stdio.h>
+void dtob(int);
+int main()
+{
+	int n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	dtob(n);
+	return 0;
+}
+void dtob(int n)
+{
+	int d=1,s=0,r;
+	while(n>0)
+	{
+		r=n%2;
+		s=s+r*d;
+		d=d*10;
+		n=n/2;
+	}
+	printf("\n Binary equivalent=%d",s);
+}
+iii)//function without argument with return
+#include<stdio.h>
+int dtob();
+int main()
+{
+	int d;
+	d=dtob();
+	printf("\n Binary equivalent=%d",d);
+	return 0;
+}
+int dtob()
+{
+	int d=1,s=0,r,n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%2;
+		s=s+r*d;
+		d=d*10;
+		n=n/2;
+	}
+	return(s);
+}
+iv)//function without argument without return
+#include<stdio.h>
+void dtob();
+int main()
+{
+	dtob();
+	return 0;
+}
+void dtob()
+{
+	int d=1,s=0,r,n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%2;
+		s=s+r*d;
+		d=d*10;
+		n=n/2;
+	}
+	printf("\n Binary equivalent=%d",s);
+}
+16)Input any binary number then convert into decimal value.
+i)//function with agrument with return
+#include<stdio.h>
+int btod(int);
+int main()
+{
+	int n,b;
+	printf("\n enter any binary number:");
+	scanf("%d",&n);
+	b=btod(n);
+	printf("\n decimal equivalent=%d",b);
+	return 0;
+}
+int btod(int n)
+{
+	int r,s=0,b=1;
+	while(n>0)
+	{
+		r=n%10;
+	    s=s+r*b;
+	    b=b*2;
+		n=n/10;
+	}
+	return(s);
+}
+ii)//function with agrument without return
+#include<stdio.h>
+void btod(int);
+int main()
+{
+	int n;
+	printf("\n enter any binary number:");
+	scanf("%d",&n);
+	btod(n);
+	return 0;
+}
+void btod(int n)
+{
+	int r,s=0,b=1;
+	while(n>0)
+	{
+		r=n%10;
+	    s=s+r*b;
+	    b=b*2;
+		n=n/10;
+	}
+	printf("\n decimal equivalent=%d",s);
+}
+iii)//function without agrument with return
+#include<stdio.h>
+int btod();
+int main()
+{
+	int b;
+    b=btod();
+    printf("\n decimal equivalent=%d",b);
+	return 0;
+}
+int btod()
+{
+	int r,s=0,b=1,n;
+	printf("\n enter any binary number:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+	    s=s+r*b;
+	    b=b*2;
+		n=n/10;
+	}
+	return(s);
+}
+iv)//function without agrument without return
+#include<stdio.h>
+void btod();
+int main()
+{
+    btod();
+	return 0;
+}
+void btod()
+{
+	int r,s=0,b=1,n;
+	printf("\n enter any binary number:");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		r=n%10;
+	    s=s+r*b;
+	    b=b*2;
+		n=n/10;
+	}
+	printf("\n decimal equivalent=%d",s);
+}
+18)Input any number then check its palindrome or not.
+i)//function with agrument with return
+#include<stdio.h>
+int pal(int);
+int main()
+{
+	int p,n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	p=pal(n);
+	if(p==0)
+	printf("\n not palindrome");
+	else
+	printf("\n palindrome");
+	return 0;
+}
+int pal(int n)
+{
+	int r,s=0,a,p;
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s*10+r;
+		n=n/10;
+	}
+	if(a==s)
+	p=1;
+	else
+    p=0;
+    return(p);
+}
+ii)//function with agrument without return
+#include<stdio.h>
+void pal(int);
+int main()
+{
+	int p,n;
+	printf("\n enter any number:");
+	scanf("%d",&n);
+	pal(n);
+	return 0;
+}
+void pal(int n)
+{
+	int r,s=0,a,p;
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s*10+r;
+		n=n/10;
+	}
+	if(a==s)
+	printf("\n pallindrome");
+	else
+    printf("\n not palindrome");
+}
+iii)//function without agrument with return
+#include<stdio.h>
+int pal();
+int main()
+{
+	int p;
+	p=pal();
+	if(p==0)
+	printf("\n not palindrome");
+	else
+	printf("\n palindrome");
+	return 0;
+}
+int pal()
+{
+	int r,s=0,a,p,n;
+	printf("\n enter any element:");
+	scanf("%d",&n);
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s*10+r;
+		n=n/10;
+	}
+	if(a==s)
+	p=1;
+	else
+    p=0;
+	return(p);
+}
+iv)//function without agrument without return
+#include<stdio.h>
+void pal();
+int main()
+{
+	pal();
+	return 0;
+}
+void pal()
+{
+	int r,s=0,a,p,n;
+	printf("\n enter any element:");
+	scanf("%d",&n);
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		s=s*10+r;
+		n=n/10;
+	}
+	if(a==s)
+	printf("\n palindrome");
+	else
+    printf("\n not palindrome");
+	
+}
+20)input any number then find a particular digit.
+iv)***//function with argument with return
+#include<stdio.h>
+int search(int);
+int main()
+{
+	int a,s;
+	printf("\n enter any number:");
+	scanf("%d",&a);
+	s=search(a);
+	if(s==0)
+	printf("\n  not found");
+	else
+	printf("\n found");
+	return 0;
+}
+int search(int a)
+{
+	int d,r,f=0,n;
+	printf("\n enter the digit which you want to search:");
+	scanf("%d",&d);
+	n=a;
+	while(n>0)
+	{
+		r=n%10;
+		if(r==d)
+		{
+			f=1;
+			break;
+		}
+		n=n/10;
+	}
+	if(n==d)
+	f=1;
+	else
+	f=0;
+	return(f);
+}
+21)Input any number then delete a particular digit.
+//function without return without argument
+#include<stdio.h>
+void del();
+void del()
+{
+	long n;
+	int r,c,s=0,d=0;
+	printf("\n Enter a number > ");
+	scanf("%ld",&n);
+	printf("\n Enter a digit which you want to delete > ");
+	scanf("%d",&c);
+	while(n>0)
+	{
+		r=n%10;
+		if(r!=c)
+			s=s*10+r;
+		else
+			d=1;
+		n=n/10;	
+	}
+	n=0;
+	if(d>0)
+	{
+		while(s>0)
+		{
+			r=s%10;
+			n=n*10+r;
+			s=s/10;
+		}
+		printf("\n After delete > %ld",n);
+	}
+	else{
+		printf("\n Digit not found");
+	}
+}
+int main()
+{
+	del();
+	return 0;
+}
+22)Input any number then print the table through return value.
+#include<stdio.h>
+int table(int,int);
+int main()
+{
+int i,n,t;
+printf("\n Enter an integer= ");
+scanf("%d",&n);
+for(i=1; i<=10; i++)
+{
+t=table(i,n);
+printf("\n %d",t);
+}
+return 0;
+}
+int table(int i,int n)
+{
+return(i*n);
+}
+
+23) Print the sereies with recursion :
+a) 1 3 5 7 9 11 .... 10th term
+#include<stdio.h>
+void series()
+{
+	static int i=1,a=1;     
+	printf("%d ",a);       
+	a=a+2;
+	i++;               
+	if(i<=10)
+		series();
+}
+int main()
+{
+	series();
+	return 0;
+}
+b) 5 8 11 14 17 .... 10th term
+#include<stdio.h>
+void series()
+{
+	static int i=1,a=5;     
+	printf("%d ",a);       
+	a=a+3;
+	i++;               
+	if(i<=10)
+		series();
+}
+int main()
+{
+	series();
+	return 0;
+}
+c) 
+2
+22
+222
+2222
+22222
+24)To find the factorial of any number through recurrsion.
+#include<stdio.h>
+int main()
+{
+	int n,f;
+	printf("\n Enter a number > ");
+	scanf("%d",&n);
+	f=fact(n);
+	printf("\n Factorial = %d",f);
+	return 0;
+}
+int fact(int n)         
+{
+	static int m=1;
+	m=m*n;            
+	n--;
+	if(n>0)
+		fact(n);
+	else
+		return(m);
+}
+25)Find the power of any number.(m^n)
+#include<stdio.h>
+int series(int m,int n)
+{
+	static int i=1,p=1;      
+	p=p*m;
+	i++;               
+	if(i<=n)
+		series(m,n);
+		else
+		return(p);
+}
+int main()
+{
+	int m,n,p;
+	printf("\n enter the value for m and n");
+	scanf("%d%d",&m,&n);
+	p=series(m,n);
+	printf("\n power value=%d",p);
+	return 0;
+}
+26)Print the fibannoic series through recurrsion.
+#include<stdio.h>
+void series()
+{
+	static int i=1,a=1,b=0,c; 
+	c=a+b;   
+	printf("%d ",c);    
+	a=b;
+	b=c;
+	i++;               
+	if(i<=10)
+		series();
+}
+int main()
+{
+	series();
+	return 0;
+}
+32)Input any string and then display string with function with argument with return.
+//function with argument with return
+#include<stdio.h>
+#include<string.h>
+char* show(char *str);
+int main()
+{
+	char str[20],ch[20];
+	printf("\n enter any string:");
+	scanf("%s",str);
+	strcpy(ch,show(str));
+	printf("\n string is=%s",ch);
+	return 0;
+}
+char* show(char *str)
+{
+	return(str);
+}
+33)Input any string and remove all the consonant from the string and display string. 
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+char* consonant(char *ch);
+int main()
+{
+char str[20],str1[20];
+printf("\n Enter an string = ");
+scanf("%s",str);
+strcpy(str1,consonant(str));
+printf("\n After removing consonant \n %s",str1);
+return 0;
+}
+char* consonant(char *ch)
+{
+int i,l,j=0;
+char *ch1;
+l=strlen(ch);
+for(i=0; i<l; i++)
+{
+if(ch[i]=='A'|| ch[i]=='E'||ch[i]=='I'|| ch[i]=='O' ||ch[i]=='U'||ch[i]=='a'|| ch[i]=='e'||ch[i]=='i'|| 
+ch[i]=='o' || ch[i]=='u')
+{
+ch[j]=ch[i];
+j++;
+}
+}
+ch[j]='\0';
+return(ch);
+}

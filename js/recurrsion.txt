@@ -1,0 +1,78 @@
+[9:10 AM, 5/2/2023] Rahul Bhaiya BCA-III year: static variable  :  In computer programming, a static variable is a variable that has 
+been allocated "statically", meaning that its lifetime (or "extent") is the entire run 
+of the program. This is in contrast to shorter-lived automatic variables, whose storage 
+is stack allocated and deallocated on the call stack; and in contrast to objects, whose 
+storage is dynamically allocated and deallocated in heap memory. 
+
+Recursion
+---------
+
+synatx :
+
+
+int main()
+{
+	table();
+}
+
+void table()
+{
+	static int i;
+	-------
+	-------
+	table();
+}
+
+
+    1 3 5 7 9 11 .... 10th term
+
+#include<stdio.h>
+void series()
+{
+	static int i=1,a=1;     
+	printf("%d ",a);       
+	a=a+2;
+	i++;               
+	if(i<=10)
+		series();
+}
+int main()
+{
+	series();
+	return 0;
+}
+
+
+// To calculate t…
+[9:19 AM, 5/2/2023] Rahul Bhaiya BCA-III year: Assignment
+-----------
+
+1) To calculate factorial of any given element function with arguement with return.
+input : 4
+Processing : 1*2*3*4
+output : 24
+
+#include<stdio.h>
+int fact(int);
+int main()
+{
+	int n,x;
+	printf("\n Enter a number > ");
+	scanf("%d",&x);                 
+	n=fact(x);      
+	printf("\n Factorial = %d",n);
+	return 0;
+}
+int fact(int a)
+{
+	int m=1,i;
+	for(i=1; i<=a; i++)
+		m=m*i;          
+	return(m);
+}
+
+---------------------------------------------------------------------------------
+3) To assign radius and height of any cyllinder and then calculate total surface area and 
+volume in the seprate function. 
+	input : rad= 5 , h=6
+	processing volume : 3.14*5*5*6
